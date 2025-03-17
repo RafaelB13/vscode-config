@@ -1,0 +1,196 @@
+{
+
+  // ==================================================
+  // APARÊNCIA E TEMAS
+  // ==================================================
+  "workbench.iconTheme": "material-icon-theme", // Tema de ícones
+  "workbench.colorTheme": "Bearded Theme Anthracite", // Tema de cores 
+  "workbench.layoutControl.enabled": false, // Desabilita o controle de layout
+  "window.commandCenter": true, // Mostra a barra de status
+  "window.zoomLevel": 0, // Nível de zoom da janela 
+  "workbench.editor.showTabs": "multiple", // Mostra abas do editor
+  "workbench.editor.editorActionsLocation": "default", // Esconde ações do editor
+  "window.title": "${rootName}",
+  "workbench.editor.tabSizing": "fit", // Ajusta tamanho das abas
+  
+  
+
+  // ==================================================
+  // EDITOR
+  // ==================================================
+  "editor.fontFamily": "JetBrainsMono Nerd Font, GeistMono Nerd Font,   GeistMono NFM, JetBrainsMono NF, JetBrainsMono NFM, CommitMono, monospace", // Fonte do editor
+  "editor.fontSize": 13, // Tamanho da fonte
+  "editor.lineHeight": 1.4, // Altura da linha
+  "editor.renderLineHighlight": "gutter", // Destaca linha no gutter
+  "editor.minimap.enabled": false, // Desabilita minimap
+  "editor.fontLigatures": true, // Habilita ligaduras de fonte
+  "editor.cursorSmoothCaretAnimation": "on", // Habilita animação de cursor suave
+  "editor.cursorBlinking": "expand", // Cursor sólido
+  // "editor.scrollbar.vertical": "hidden", // Esconde scrollbar vertical
+  "editor.scrollbar.horizontal": "hidden", // Esconde scrollbar horizontal
+  "editor.codeActionsOnSave": [
+    // Ações ao salvar
+    "source.formatDocument",
+    "source.fixAll.eslint",
+    "source.fixAll.tslint",
+    "source.fixAll.stylelint"
+  ],
+  "editor.matchBrackets": "always", // Sempre destaca brackets correspondentes
+  "editor.inlineSuggest.enabled": true, // Habilita sugestões inline
+  "editor.glyphMargin": false, // Habilita margem de glifos
+  "editor.showFoldingControls": "never", // Oculta controles de folding
+  "editor.renderWhitespace": "none", // Oculta espaços em branco
+  "editor.guides.indentation": true, // Desabilita guias de indentação
+  "editor.bracketPairColorization.enabled": true, // Habilita colorização de pares de brackets
+  "editor.guides.bracketPairs": "active", // Guias para pares de brackets
+  "editor.semanticHighlighting.enabled": false, // Desabilita highlight semântico
+  "editor.hideCursorInOverviewRuler": false, // Mostra cursor na régua de overview
+  "editor.linkedEditing": true, // Habilita edição vinculada (ex: HTML tags)
+  "editor.stickyScroll.enabled": false, // Desabilita sticky scroll
+  "editor.accessibilitySupport": "off", // Desabilita suporte a acessibilidade
+  "editor.formatOnPaste": false, // Desabilita formatação ao colar
+  // TERMINAL
+  // ==================================================
+  "terminal.external.linuxExec": "iterm", // Terminal externo no Linux
+  "terminal.integrated.defaultProfile.osx": "zsh", // Perfil padrão do terminal no macOS
+  "terminal.external.osxExec": "Iterm.app", // Terminal externo no macOS
+  "terminal.integrated.fontSize": 11, // Tamanho da fonte do terminal
+  "terminal.integrated.gpuAcceleration": "on", // Habilita aceleração de GPU no terminal
+  // ==================================================
+  // EXPLORER E BREADCRUMBS
+  // ==================================================
+  "explorer.compactFolders": false, // Desabilita pastas compactas
+  "explorer.confirmDelete": false, // Desabilita confirmação ao deletar
+  "breadcrumbs.enabled": true, // Habilita breadcrumbs
+  "workbench.tree.indent": 8, // Indentação na árvore de arquivos
+  "workbench.editor.labelFormat": "short", // Formato de label do editor
+
+  // ==================================================
+  // FORMATAÇÃO E LINTING
+  // ==================================================
+  "[python]": {
+    "editor.formatOnType": true // Formatação ao digitar para Python
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features" // Formatter padrão para JSON
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Formatter padrão para JavaScript
+    "editor.formatOnSave": false // Desabilita formatação ao salvar
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter padrão para Vue
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter padrão para HTML
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter padrão para JSONC
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features", // Formatter padrão para TypeScript
+    "editor.formatOnSave": false // Desabilita formatação ao salvar
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter padrão para JSX
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Formatter padrão para TSX
+    "editor.formatOnSave": false // Desabilita formatação ao salvar
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter padrão para CSS
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter padrão para Handlebars
+  },
+
+  // ==================================================
+  // INLAY HINTS
+  // ==================================================
+  "editor.inlayHints.enabled": "on", // Habilita inlay hints
+  "editor.inlayHints.padding": true, // Adiciona padding aos inlay hints
+  "editor.inlayHints.fontFamily": "CommitMono, JetBrainsMono Nerd Font, monospace", // Fonte dos inlay hints
+  "editor.inlayHints.fontSize": 16, // Tamanho da fonte dos inlay hints
+  "go.inlayHints.parameterNames": true, // Inlay hints para nomes de parâmetros no Go
+  "go.inlayHints.assignVariableTypes": true, // Inlay hints para tipos de variáveis no Go
+  "go.inlayHints.compositeLiteralFields": true, // Inlay hints para campos literais no Go
+  "go.inlayHints.compositeLiteralTypes": true, // Inlay hints para tipos literais no Go
+  "go.inlayHints.constantValues": true, // Inlay hints para valores constantes no Go
+  "go.inlayHints.functionTypeParameters": true, // Inlay hints para parâmetros de função no Go
+  "go.inlayHints.rangeVariableTypes": true, // Inlay hints para tipos de variáveis de range no Go
+  "javascript.inlayHints.parameterNames.enabled": "all", // Inlay hints para nomes de parâmetros em JavaScript
+  "typescript.inlayHints.parameterNames.enabled": "all", // Inlay hints para nomes de parâmetros em TypeScript
+
+  // ==================================================
+  // GIT
+  // ==================================================
+  "git.enableSmartCommit": true, // Habilita smart commit
+  "git.autofetch": true, // Habilita autofetch
+
+  // ==================================================
+  // EXTENSÕES E TELEMETRIA
+  // ==================================================
+  "extensions.autoUpdate": "onlyEnabledExtensions", // Atualiza apenas extensões habilitadas
+  "redhat.telemetry.enabled": false, // Desabilita telemetria da Red Hat
+  "extensions.ignoreRecommendations": true, // Ignora recomendações de extensões
+
+  // ==================================================
+  // COPILOT
+  // ==================================================
+  "github.copilot.editor.enableAutoCompletions": true, // Habilita autocompletions do Copilot
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  // ==================================================
+  // EMMET
+  // ==================================================
+  "emmet.includeLanguages": {
+    "vue-html": "html", // Habilita Emmet para Vue HTML
+    "vue": "html" // Habilita Emmet para Vue
+  },
+
+  // ==================================================
+  // EDITOR ASSOCIATIONS
+  // ==================================================
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor", // Associa arquivos .copilotmd ao preview de Markdown
+    "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default" // Associa arquivos específicos ao editor padrão
+  },
+
+  // ==================================================
+  // GO (GOLANG)
+  // ==================================================
+  "go.toolsManagement.autoUpdate": true, // Atualiza automaticamente ferramentas do Go
+
+  // ==================================================
+  // DATABASE CLIENT
+  // ==================================================
+  "database-client.autoSync": true, // Habilita sincronização automática do cliente de banco de dados
+
+  // ==================================================
+  // REMOTE DEVELOPMENT
+  // ==================================================
+  "remote.portsAttributes": {
+    "3025": {
+      "protocol": "https" // Define o protocolo para a porta 3025
+    }
+  },
+
+  // ==================================================
+  // OUTRAS CONFIGURAÇÕES
+  // ==================================================
+  "files.autoSave": "onFocusChange", // Salva automaticamente ao mudar de foco
+  "symbols.hidesExplorerArrows": true, // Mostra setas no explorer
+  "vscode-office.openOutline": true, // Abre o outline para documentos Office
+  "javascript.updateImportsOnFileMove.enabled": "prompt", // Atualiza imports ao mover arquivos
+  "typescript.suggest.autoImports": true,
+  "window.titleBarStyle": "custom", // Habilita sugestões de auto-imports no TypeScript
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.filePath": "on",
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+}
