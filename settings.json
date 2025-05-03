@@ -6,8 +6,8 @@
   "workbench.iconTheme": "material-icon-theme", // Tema de ícones
   "workbench.colorTheme": "Bearded Theme Anthracite", // Tema de cores 
   "workbench.layoutControl.enabled": false, // Desabilita o controle de layout
-  "window.commandCenter": true, // Mostra a barra de status
-  "window.zoomLevel": 0, // Nível de zoom da janela 
+  "window.commandCenter": true, // Nível de zoom da janela 
+  "window.zoomLevel": -1,
   "workbench.editor.showTabs": "multiple", // Mostra abas do editor
   "workbench.editor.editorActionsLocation": "default", // Esconde ações do editor
   "window.title": "${rootName}",
@@ -19,7 +19,7 @@
   // EDITOR
   // ==================================================
   "editor.fontFamily": "JetBrainsMono Nerd Font, GeistMono Nerd Font,   GeistMono NFM, JetBrainsMono NF, JetBrainsMono NFM, CommitMono, monospace", // Fonte do editor
-  "editor.fontSize": 13, // Tamanho da fonte
+  "editor.fontSize": 13.5, // Tamanho da fonte
   "editor.lineHeight": 1.4, // Altura da linha
   "editor.renderLineHighlight": "gutter", // Destaca linha no gutter
   "editor.minimap.enabled": false, // Desabilita minimap
@@ -27,17 +27,18 @@
   "editor.cursorSmoothCaretAnimation": "on", // Habilita animação de cursor suave
   "editor.cursorBlinking": "expand", // Cursor sólido
   // "editor.scrollbar.vertical": "hidden", // Esconde scrollbar vertical
-  "editor.scrollbar.horizontal": "hidden", // Esconde scrollbar horizontal
+  "editor.scrollbar.horizontal": "hidden",
   "editor.codeActionsOnSave": [
     // Ações ao salvar
     "source.formatDocument",
     "source.fixAll.eslint",
     "source.fixAll.tslint",
-    "source.fixAll.stylelint"
+    "source.fixAll.stylelint",
+    "source.organizeImports"
   ],
   "editor.matchBrackets": "always", // Sempre destaca brackets correspondentes
   "editor.inlineSuggest.enabled": true, // Habilita sugestões inline
-  "editor.glyphMargin": false, // Habilita margem de glifos
+  // "editor.glyphMargin": false, // Habilita margem de glifos
   "editor.showFoldingControls": "never", // Oculta controles de folding
   "editor.renderWhitespace": "none", // Oculta espaços em branco
   "editor.guides.indentation": true, // Desabilita guias de indentação
@@ -46,7 +47,7 @@
   "editor.semanticHighlighting.enabled": false, // Desabilita highlight semântico
   "editor.hideCursorInOverviewRuler": false, // Mostra cursor na régua de overview
   "editor.linkedEditing": true, // Habilita edição vinculada (ex: HTML tags)
-  "editor.stickyScroll.enabled": false, // Desabilita sticky scroll
+  "editor.stickyScroll.enabled": true, // Desabilita sticky scroll
   "editor.accessibilitySupport": "off", // Desabilita suporte a acessibilidade
   "editor.formatOnPaste": false, // Desabilita formatação ao colar
   // TERMINAL
@@ -62,7 +63,7 @@
   "explorer.compactFolders": false, // Desabilita pastas compactas
   "explorer.confirmDelete": false, // Desabilita confirmação ao deletar
   "breadcrumbs.enabled": true, // Habilita breadcrumbs
-  "workbench.tree.indent": 8, // Indentação na árvore de arquivos
+  "workbench.tree.indent": 16, // Indentação na árvore de arquivos
   "workbench.editor.labelFormat": "short", // Formato de label do editor
 
   // ==================================================
@@ -140,7 +141,7 @@
   // ==================================================
   "github.copilot.editor.enableAutoCompletions": true, // Habilita autocompletions do Copilot
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false
